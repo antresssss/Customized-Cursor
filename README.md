@@ -1,50 +1,38 @@
-# React + TypeScript + Vite
+# 🖱️ Custom Cursor Creator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Custom Cursor Creator - a fun little React app that lets you spice up your cursor game! Built with React, TypeScript, and Vite, this project lets you upload your own images and turn them into custom cursors.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Upload your own images to use as cursors
+- Auto-resizing of large images to cursor-friendly dimensions
+- Live preview of how your cursor will look
+- Easy switching between different cursors
+- Smooth pastel-themed UI
+- Fully responsive design
 
-## Expanding the ESLint configuration
+## 💡 How to Use
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Click the "Upload" button to choose an image
+2. Your image will automatically be optimized for cursor use
+3. Click on any cursor in the preview grid to activate it
+4. Move your mouse around to see your new cursor in action!
+5. Want to go back? Just click the "Default" option
 
-- Configure the top-level `parserOptions` property like this:
+## 🎨 Tips for Best Results
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- Use small PNG images (32x32 pixels is ideal)
+- Images with transparent backgrounds work best
+- Simple, clear designs make for better cursors
+- Light images work well with the pastel theme
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🛠️ Built With
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- FileReader API
+- Canvas API for image processing
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Happy cursor customizing! ✨
